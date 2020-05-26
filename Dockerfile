@@ -1,12 +1,12 @@
 FROM squidfunk/mkdocs-material:5.2.1
 
 RUN apk add --no-cache --virtual .devel gcc make musl-dev \
- && pip install mdx_truly_sane_lists==1.2 \
-                mdx_unimoji==1.0 \
-                mkdocs-awesome-pages-plugin==2.2.1 \
-                plantuml-markdown==3.2.2 \
-                pymdown-extensions==7.0 \
-                python-markdown-math==0.6 \
+ && pip install 'mdx_truly_sane_lists==1.2.*' \
+                'mdx_unimoji==1.0.*' \
+                'mkdocs-awesome-pages-plugin==2.2.*' \
+                'plantuml-markdown==3.2.*' \
+                'pymdown-extensions==7.0.*' \
+                'python-markdown-math==0.6.*' \
                 git+https://github.com/bmcorser/fontawesome-markdown@5feb14118d963312d52bb1fdb4c7eefa4da19880 \
  && apk del .devel
 
