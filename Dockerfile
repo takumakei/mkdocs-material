@@ -3,10 +3,10 @@ FROM squidfunk/mkdocs-material:5.3.2
 RUN apk add --no-cache --virtual .devel gcc make musl-dev \
  && pip install 'mdx_truly_sane_lists==1.2.*' \
                 'mdx_unimoji==1.0.*' \
-                'mkdocs-awesome-pages-plugin==2.2.*' \
-                'plantuml-markdown==3.2.*' \
-                'pymdown-extensions==7.0.*' \
-                'python-markdown-math==0.6.*' \
+                'mkdocs-awesome-pages-plugin==2.6.*' \
+                'plantuml-markdown==3.5.*' \
+                'pymdown-extensions==9.1.*' \
+                'python-markdown-math==0.8.*' \
                 git+https://github.com/bmcorser/fontawesome-markdown@5feb14118d963312d52bb1fdb4c7eefa4da19880 \
  && apk del .devel
 
