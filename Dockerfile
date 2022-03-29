@@ -7,6 +7,7 @@ RUN apk add --no-cache --virtual .devel gcc make musl-dev \
                 'plantuml-markdown==3.5.*' \
                 'pymdown-extensions==9.1.*' \
                 'python-markdown-math==0.8.*' \
+                'mkdocs-include-markdown-plugin==3.2.*' \
                 git+https://github.com/bmcorser/fontawesome-markdown@5feb14118d963312d52bb1fdb4c7eefa4da19880 \
  && apk del .devel
 
