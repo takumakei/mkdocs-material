@@ -1,4 +1,4 @@
-FROM squidfunk/mkdocs-material:8.1.11
+FROM squidfunk/mkdocs-material:8.2.8
 
 RUN apk add --no-cache --virtual .devel gcc make musl-dev \
  && pip install 'mdx_truly_sane_lists==1.2.*' \
