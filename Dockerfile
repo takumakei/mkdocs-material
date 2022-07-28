@@ -1,8 +1,9 @@
-FROM squidfunk/mkdocs-material:8.2.8
+ARG VARIANT="8.3.9"
+FROM squidfunk/mkdocs-material:${VARIANT}
 
 RUN apk add --no-cache --virtual .devel gcc make musl-dev \
  && pip install 'mdx_truly_sane_lists==1.2.*' \
-                'mdx_unimoji==1.0.*' \
+                'mdx_unimoji==1.1.*' \
                 'mkdocs-awesome-pages-plugin==2.6.*' \
                 'plantuml-markdown==3.5.*' \
                 'pymdown-extensions==9.1.*' \
